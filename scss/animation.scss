@@ -1,0 +1,40 @@
+.burbuja {
+
+	position: relative;
+	display: flex;
+
+        span {
+
+            position: relative;
+            width: 30px;
+            height: 30px;
+            background-color: rgb(97, 11, 131);
+            margin: 0 4px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 10px rgb(74, 87, 75)
+            0 0 50px rgb(70, 248, 189)
+            0 0 100px rgb(55, 250, 185);
+            animation: 15ms linear infinite;
+            color: antiquewhite;
+        }
+}
+
+.burbuja {
+            position: relative;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            animation: mover 5s ease-in-out infinite;
+  }
+
+  @keyframes mover {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 48%;
+    }
+    100% {
+      left: 0;
+    }
+  }
